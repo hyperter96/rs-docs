@@ -1,15 +1,17 @@
 {% article i18n="zh-CN" %}
 
-# 类型转换
+# 智能指针
 
 {% /article %}
 
 {% article i18n="en" %}
 
-# Type Conversion
+# Smart Pointer
 
 {% /article %}
 
 {% article i18n="es" %}
+
+# # Puntero inteligente
 
 {% /article %}

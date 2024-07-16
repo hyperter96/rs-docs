@@ -18,12 +18,12 @@ const icons = {
 }
 
 const iconStyles = {
-  orange: '[--icon-foreground:theme(colors.slate.900)] [--icon-background:theme(colors.white)]',
+  blue: '[--icon-foreground:theme(colors.slate.900)] [--icon-background:theme(colors.white)]',
   amber:
     '[--icon-foreground:theme(colors.amber.900)] [--icon-background:theme(colors.amber.100)]',
 }
 
-export function Icon({ color = 'orange', icon, className, ...props }) {
+export function Icon({ color = 'blue', icon, className, ...props }) {
   let id = useId()
   let IconComponent = icons[icon]
 
@@ -41,10 +41,10 @@ export function Icon({ color = 'orange', icon, className, ...props }) {
 }
 
 const gradients = {
-  orange: [
-    { stopColor: '#e9570e' },
-    { stopColor: '#e9910e', offset: '.527' },
-    { stopColor: '#e9910e', offset: 1 },
+  blue: [
+    { stopColor: '#0EA5E9' },
+    { stopColor: '#22D3EE', offset: '.527' },
+    { stopColor: '#818CF8', offset: 1 },
   ],
   amber: [
     { stopColor: '#FDE68A', offset: '.08' },
@@ -52,7 +52,7 @@ const gradients = {
   ],
 }
 
-export function Gradient({ color = 'orange', ...props }) {
+export function Gradient({ color = 'blue', ...props }) {
   return (
     <radialGradient
       cx={0}

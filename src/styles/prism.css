@@ -1,5 +1,5 @@
 pre[class*='language-'] {
-  color: theme('colors.amber.100');
+  color: theme('colors.sky.100');
   /* font: 14px Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace; */
 }
 
@@ -28,7 +28,7 @@ pre[class*='language-'] {
 .token.class,
 .token.string,
 .token.property {
-  color: theme('colors.amber.300');
+  color: theme('colors.sky.300');
 }
 
 .token.punctuation,

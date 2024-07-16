@@ -79,9 +79,9 @@ export function HeroBackground(props) {
           cy="574.062"
           r="10.438"
           transform="rotate(-180 484.301 574.062)"
-          fill="#e9990e"
+          fill="#0EA5E9"
           fillOpacity=".42"
-          stroke="#e9990e"
+          stroke="#0EA5E9"
         />
         <circle
           cx="384.1"
@@ -133,9 +133,9 @@ export function HeroBackground(props) {
           cy="484.3"
           r="10.438"
           transform="rotate(-180 83.5 484.3)"
-          fill="#e9990e"
+          fill="#0EA5E9"
           fillOpacity=".42"
-          stroke="#e9990e"
+          stroke="#0EA5E9"
         />
         <circle
           cx="484.301"

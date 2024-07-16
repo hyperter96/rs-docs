@@ -1,6 +1,6 @@
-# Zig Programming Docs
+# Rust Programming Docs
 
-The site is up on [https://zig.hyperter.top](https://zig.hyperter.top).
+The site is up on [https://rust.hyperter.top](https://rust.hyperter.top).
 
 ## Getting started
 

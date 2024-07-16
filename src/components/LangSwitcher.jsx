@@ -7,6 +7,7 @@ import clsx from 'clsx'
 const langs = [
   { name: '简体中文', value: 'zh-CN', icon: ZhCnIcon },
   { name: 'English', value: 'en', icon: EnIcon },
+  { name: 'Español', value: 'es', icon: EsIcon},
 ]
 
 function IconBase({ children, ...props }) {
@@ -41,6 +42,18 @@ function EnIcon(props) {
   )
 }
 
+function EsIcon(props) {
+  return (
+    <IconBase {...props}>
+      <path 
+      fillRule='evenodd'
+      clipRule='evenodd'
+      d='M74.32 0h363.36C478.55 0 512 33.46 512 74.32v271.53c0 40.82-33.5 74.32-74.32 74.32H74.32C33.44 420.17 0 386.69 0 345.85V74.32C0 33.41 33.41 0 74.32 0zm151.15 227.92h-46.63v17.72h57.12v37.3H132.22V137.23h102.57l-5.83 37.3h-50.12v19.58h46.63v33.81zm31.47 52.45l6.52-38.46c14.3 3.57 27.17 5.36 38.58 5.36 11.43 0 20.64-.47 27.63-1.4v-11.66l-20.98-1.86c-18.96-1.71-31.98-6.26-39.05-13.64-7.07-7.38-10.61-18.3-10.61-32.76 0-19.89 4.32-33.57 12.94-41.03 8.63-7.45 23.27-11.19 43.95-11.19 20.67 0 39.32 1.95 55.95 5.83l-5.83 37.31c-14.45-2.34-26.03-3.51-34.73-3.51-8.71 0-16.1.39-22.16 1.17v11.42l16.79 1.64c20.36 2.02 34.43 6.88 42.2 14.57 7.77 7.69 11.65 18.37 11.65 32.05 0 9.8-1.31 18.07-3.96 24.83-2.64 6.76-5.78 11.89-9.44 15.39-3.65 3.5-8.82 6.18-15.5 8.04-6.68 1.87-12.55 2.99-17.61 3.38-5.05.39-11.77.58-20.16.58-20.2 0-38.93-2.02-56.18-6.06z'
+      />
+    </IconBase>
+  )
+}
+
 export function LangSwitcher(props) {
   const {pathname, query, asPath, locale} = useRouter()
   let [selectedLang, setSelectedLang] = useState(langs.filter(function(lang){
@@ -67,12 +80,13 @@ export function LangSwitcher(props) {
       {...props}
     >
       <Listbox.Label className="sr-only">Lang</Listbox.Label>
-      <Listbox.Button className="flex h-6 w-6 items-center justify-center rounded-lg shadow-md shadow-black/5 ring-1 ring-black/5 dark:bg-zinc-700 dark:ring-inset dark:ring-white/5">
+      <Listbox.Button className="flex h-6 w-6 items-center justify-center rounded-lg shadow-md shadow-black/5 ring-1 ring-black/5 dark:bg-ghost-700 dark:ring-inset dark:ring-white/5">
         <span className="sr-only">{selectedLang?.name}</span>
-        <ZhCnIcon className="hidden h-4 w-4 fill-amber-400 [[lang=zh-CN]_&]:block" />
-        <EnIcon className="hidden h-4 w-4 fill-amber-400 [[lang=en]_&]:block" />
+        <ZhCnIcon className="hidden h-4 w-4 fill-sky-400 [[lang=zh-CN]_&]:block" />
+        <EnIcon className="hidden h-4 w-4 fill-sky-400 [[lang=en]_&]:block" />
+        <EsIcon className="hidden h-4 w-4 fill-sky-400 [[lang=es]_&]:block" />
       </Listbox.Button>
-      <Listbox.Options className="absolute top-full left-1/2 mt-3 w-36 -translate-x-1/2 space-y-1 rounded-xl bg-white p-3 text-sm font-medium shadow-md shadow-black/5 ring-1 ring-black/5 dark:bg-zinc-800 dark:ring-white/5">
+      <Listbox.Options className="absolute top-full left-1/2 mt-3 w-36 -translate-x-1/2 space-y-1 rounded-xl bg-white p-3 text-sm font-medium shadow-md shadow-black/5 ring-1 ring-black/5 dark:bg-ghost-700 dark:ring-white/5">
         {langs.map((lang) => (
             <Link key={lang.value} href={{pathname, query}} as={asPath} locale={lang.value}>
           <Listbox.Option
@@ -82,21 +96,21 @@ export function LangSwitcher(props) {
               clsx(
                 'flex cursor-pointer select-none items-center rounded-[0.625rem] p-1',
                 {
-                  'text-amber-500': selected,
+                  'text-sky-500': selected,
                   'text-slate-900 dark:text-white': active && !selected,
                   'text-slate-700 dark:text-slate-400': !active && !selected,
-                  'bg-zinc-100 dark:bg-zinc-900/40': active,
+                  'bg-ghost-100 dark:bg-ghost-900/40': active,
                 }
               )
             }
           >
             {({ selected }) => (
               <>
-                <div className="rounded-md bg-white p-1 shadow ring-1 ring-slate-900/5 dark:bg-zinc-700 dark:ring-inset dark:ring-white/5">
+                <div className="rounded-md bg-white p-1 shadow ring-1 ring-slate-900/5 dark:bg-ghost-700 dark:ring-inset dark:ring-white/5">
         
                   <lang.icon
                     className={clsx('h-5 w-5', {
-                      'fill-amber-400 dark:fill-amber-400': selected,
+                      'fill-sky-400 dark:fill-sky-400': selected,
                       'fill-slate-400': !selected,
                     })}
                   />

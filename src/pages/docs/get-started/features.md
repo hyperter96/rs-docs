@@ -1,41 +1,75 @@
----
-pageTitle: Zig - 功能特色
-description: 通用的编程语言和工具链.
----
-
 {% article i18n="zh-CN" %}
 
 # 功能特色
 
-## Why use Zig
+## Rust MindMap
 
-从本质上看，Zig 是一门 low level 的高级语言，它和 C 很像，但改善旧问题并提供了完善的工具链，并且它可选支持 `libc`。
+{% xmindViewer url="https://rust.hyperter.top/xmind/rust-mindmap.xmind" /%}
 
-一切都是强制显式声明式，这使得代码阅读很轻松！
+## Why use Rust
 
-如果你是嵌入式开发，亦或者对速度有很高的要求，还不想使用心智负担太高的其他高级语言，或许 Zig 很适合你。
+### Command Line
 
-## Features
+利用 Rust 强大的生态系统快速构建 CLI 工具。Rust 可帮助您自信地维护应用程序并轻松分发应用程序。
 
-- 类型是一等公民
-- 无隐式执行
-- 手动内存控制，精确的内存泄漏跟踪
-- 完善的堆栈跟踪（在裸机器上也可以）
-- 对交叉编译的一流支持
-- 标准库集成 `libc` ，但不依赖它
-- 可选类型代替 `null`，详见 计算机科学中最严重的错误
-- 编译期（可以简单看作在编译时执行的函数）执行实现泛型和反射
-- 无需 `FFI/bindings` 的 C 库集成
-- 非常强大的构建系统
+### WebAssembly
 
-有几点是非常值得单独拿出来说明一下的：
+使用 Rust 为您的 JavaScript 增压，一次一个模块。发布到 `npm`，使用 `webpack` 打包，然后您就可以开始做有趣的WebAssembly项目了。
 
-Zig 会要求你显式传递和管理你的内存，并且编译时就会跟踪你的内存是否发生泄漏， 高明的可选类型（这和 rust 的 `option` 有异曲同工之妙），强大的编译期运行，你可实现很多花哨的操作，而构建系统则被很多 C 项目拿去作为工具链使用。
+### Networking
+
+可预测的性能。极小的资源占用。坚如磐石的可靠性。Rust 非常适合网络服务。
+
+### Embedded
+
+针对低资源设备？需要低级控制，又不想放弃高级便利？Rust 可以满足您的需求。
 
 {% /article %}
 
 {% article i18n="en" %}
 
 # Features
+
+## Why use Rust
+
+### Command Line
+
+Whip up a CLI tool quickly with Rust’s robust ecosystem. Rust helps you maintain your app with confidence and distribute it with ease.
+
+### WebAssembly
+
+Use Rust to supercharge your JavaScript, one module at a time. Publish to `npm`, bundle with `webpack`, and you’re off to the races.
+
+### Networking
+
+Predictable performance. Tiny resource footprint. Rock-solid reliability. Rust is great for network services.
+
+### Embedded
+
+Targeting low-resource devices? Need low-level control without giving up high-level conveniences? Rust has you covered.
+
+{% /article %}
+
+{% article i18n="es" %}
+
+# Características
+
+## ¿Por qué usar Rust?
+
+### Línea de comando
+
+Cree una herramienta CLI rápidamente con el sólido ecosistema de Rust. Rust te ayuda a mantener tu aplicación con confianza y distribuirla con facilidad.
+
+### Asamblea web
+
+Utilice Rust para potenciar su JavaScript, un módulo a la vez. Publique en `npm`, combine con el paquete web y estará listo.
+
+### Redes
+
+Rendimiento predecible. Pequeña huella de recursos. Fiabilidad sólida como una roca. Rust es ideal para servicios de red.
+
+### Incorporado
+
+¿Apuntando a dispositivos de bajos recursos? ¿Necesita un control de bajo nivel sin renunciar a las comodidades de alto nivel? Rust lo tiene cubierto.
 
 {% /article %}

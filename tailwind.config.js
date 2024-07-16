@@ -35,6 +35,13 @@ module.exports = {
           900: '#24100b',
         },
         ghost: {
+          100: '#babac5',
+          200: '#a4a3b2',
+          300: '#8d8c9f',
+          400: '#76758c',
+          500: '#605e79',
+          600: '#494766',
+          700: '#323053',
           800: '#1c1a40',
           850: '#170d2e',
           900: '#12112e',
@@ -51,7 +58,7 @@ module.exports = {
             },
             code: {
               color: theme("colors.red.700"),
-              backgroundColor: theme('colors.zinc.800'),
+              backgroundColor: theme('colors.ghost.800'),
               wordWrap: 'break-word',
               boxDecorationBreak: 'clone',
               font: `12px Monaco,Consolas,"Andale  Mono","DejaVu Sans Mono",monospace`,
@@ -64,8 +71,8 @@ module.exports = {
         dark: {
           css: {
             code: { 
-              color: theme("colors.amber.100"),
-              backgroundColor: theme('colors.zinc.850'),
+              color: theme("colors.sky.100"),
+              backgroundColor: theme('colors.ghost.850'),
               wordWrap: 'break-word',
               boxDecorationBreak: 'clone',
               fontWeight: "lighter",

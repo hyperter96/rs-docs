@@ -6,7 +6,7 @@ const isBrowser = typeof window !== 'undefined'
 /** @type {import('next').NextConfig} */
 const nextConfig = withMarkdoc()({
   swcMinify: true,
-  reactStrictMode: true,
+  // reactStrictMode: true,
   pageExtensions: ['js', 'jsx', 'md'],
   experimental: {
     scrollRestoration: true,

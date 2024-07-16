@@ -1,5 +1,5 @@
 {
-  "name": "zig-docs",
+  "name": "rust-docs",
   "version": "0.1.0",
   "private": false,
   "scripts": {
@@ -15,6 +15,7 @@
     "@headlessui/react": "^1.6.6",
     "@markdoc/markdoc": "^0.1.3",
     "@markdoc/next.js": "^0.1.6",
+    "@matejmazur/react-katex": "^3.1.3",
     "@sindresorhus/slugify": "^2.1.0",
     "@tailwindcss/typography": "^0.5.3",
     "autoprefixer": "^10.4.7",
@@ -25,6 +26,7 @@
     "i18next": "^23.11.5",
     "i18next-http-backend": "^2.5.2",
     "i18next-resources-to-backend": "^1.2.1",
+    "katex": "^0.16.11",
     "next": "^14.2.5",
     "next-i18n-router": "^5.5.1",
     "next-i18next": "^15.3.0",
@@ -33,12 +35,18 @@
     "postcss-import": "^14.1.0",
     "prism-react-renderer": "^2.3.1",
     "prismjs": "^1.28.0",
+    "prop-types": "^15.8.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
+    "react-frame-component": "^5.2.7",
+    "react-markdown": "^9.0.1",
+    "rehype-katex": "^7.0.0",
     "remark": "^15.0.1",
     "remark-html": "^16.0.1",
+    "remark-math": "^6.0.0",
     "styled-components": "^6.1.11",
-    "tailwindcss": "^3.1.5"
+    "tailwindcss": "^3.1.5",
+    "xmind-embed-viewer": "^1.2.0"
   },
   "devDependencies": {
     "eslint": "8.19.0",

@@ -1,19 +1,14 @@
----
-pageTitle: Zig - 简单介绍
-description: 通用的编程语言和工具链.
----
-
 {% article i18n="zh-CN" %}
 
 # 简单介绍
 
-Zig 是一种通用的编程语言和工具链，用于维护**健壮**、**最优**和**可重用**的软件。 {% .lead %}
+Rust 程序设计语言的本质实际在于**赋能**（empowerment）：无论你现在编写的是何种代码，Rust 能让你在更为广泛的编程领域走得更远，写出自信。 {% .lead %}
 
 {% link-grid %}
 
-{% link-grid-link title="Zig 安装" icon="installation" href="/docs/get-started/installation" description="系统配置以及安装Zig的分步指南" /%}
+{% link-grid-link title="Rust 安装" icon="installation" href="/docs/get-started/installation" description="系统配置以及安装Rust的分步指南" /%}
 
-{% link-grid-link title="高层次概述" icon="plugins" href="/docs/core-concept/high-level-overview" description="对Zig程序的高层次概述" /%}
+{% link-grid-link title="高层次概述" icon="plugins" href="/docs/core-concept/high-level-overview" description="对Rust程序的高层次概述" /%}
 
 {% link-grid-link title="类型转换" icon="presets" href="/docs/advanced/type-cast" description="在进阶学习中，我们将讲解三种类型转换" /%}
 
@@ -23,31 +18,20 @@ Zig 是一种通用的编程语言和工具链，用于维护**健壮**、**最�
 
 ---
 
-## 什么是 Zig
+## 什么是 Rust
 
-⚡ **一种简单的语言**
+⚡ **高性能**
 
-专注于调试你的应用程序，而不是调试你的编程语言知识
+Rust 速度极快，内存效率高：无需运行时或垃圾收集器，它可以为性能关键型服务提供支持，在嵌入式设备上运行，并轻松与其他语言集成。
 
-- 没有隐式控制流
-- 没有隐式内存分配
-- 没有预处理器，没有宏
+⚡ **可靠性**
 
-⚡ **编译期代码执行**
+Rust 丰富的类型系统和所有权模型可保证内存安全和线程安全 - 使您能够在编译时消除许多类型的错误。
 
-基于编译期代码执行和惰性求值的全新元编程方法
+⚡ **生产力**
 
-- 编译期调用任意函数
-- 在没有运行时开销的情况下，将类型作为值进行操作
-- 编译期模拟目标架构
+Rust 具有出色的文档、带有有用错误消息的友好编译器和一流的工具 - 集成的包管理器和构建工具、具有自动完成和类型检查的智能多编辑器支持、自动格式化程序等。
 
-⚡ **用 Zig 维护代码**
-
-逐步改善你的 C/C++/Zig 代码库
-
-- 将 Zig 作为一个零依赖的，支持开箱即用交叉编译的 C/C++ 编译器
-- 利用`zig build`在所有平台上创建一个一致的开发环境
-- 在 C/C++ 项目中添加一个 Zig 编译单元，跨语言 LTO 默认启用
 
 {% /article %}
 
@@ -55,13 +39,13 @@ Zig 是一种通用的编程语言和工具链，用于维护**健壮**、**最�
 
 # Introduction
 
-Zig is a general-purpose programming language and toolchain for maintaining **robust**, **optimal**, and **reusable** software. {% .lead %}
+The essence of the Rust programming language is actually **empowerment**: no matter what kind of code you are writing now, Rust can enable you to go further in a wider range of programming fields and write confident. {% .lead %}
 
 {% link-grid %}
 
-{% link-grid-link title="Zig Installation" icon="installation" href="/docs/get-started/installation" description="A step-by-step guide to system configuration and installation of Zig" /%}
+{% link-grid-link title="Rust Installation" icon="installation" href="/docs/get-started/installation" description="A step-by-step guide to system configuration and installation of Rust" /%}
 
-{% link-grid-link title="High-level Overview" icon="plugins" href="/docs/core-concept/high-level-overview" description="A high-level overview of the Zig program" /%}
+{% link-grid-link title="High-level Overview" icon="plugins" href="/docs/core-concept/high-level-overview" description="A high-level overview of the Rust program" /%}
 
 {% link-grid-link title="Type Conversion" icon="presets" href="/docs/advanced/type-cast" description="In advanced learning, we will explain three types of conversion" /%}
 
@@ -71,30 +55,54 @@ Zig is a general-purpose programming language and toolchain for maintaining **ro
 
 ---
 
-## What is Zig
+## What is Rust
 
-⚡ **A Simple Language**
+⚡ **High-performance**
 
-Focus on debugging your application rather than debugging your programming language knowledge.
+Rust is blazingly fast and memory-efficient: with no runtime or garbage collector, it can power performance-critical services, run on embedded devices, and easily integrate with other languages.
 
-- No hidden control flow.
-- No hidden memory allocations.
-- No preprocessor, no macros.
+⚡ **Reliability**
 
-⚡ **Comptime**
+Rust’s rich type system and ownership model guarantee memory-safety and thread-safety — enabling you to eliminate many classes of bugs at compile-time.
 
-A fresh approach to metaprogramming based on compile-time code execution and lazy evaluation.
+⚡ **Productivity**
 
-Call any function at compile-time.
-Manipulate types as values without runtime overhead.
-Comptime emulates the target architecture.
+Rust has great documentation, a friendly compiler with useful error messages, and top-notch tooling — an integrated package manager and build tool, smart multi-editor support with auto-completion and type inspections, an auto-formatter, and more.
 
-⚡ **Maintain it with Zig**
+{% /article %}
 
-Incrementally improve your C/C++/Zig codebase.
+{% article i18n="es" %}
 
-- Use Zig as a zero-dependency, drop-in C/C++ compiler that supports cross-compilation out-of-the-box.
-- Leverage `zig build` to create a consistent development environment across all platforms.
-- Add a Zig compilation unit to C/C++ projects, exposing the rich standard library to your C/C++ code.
+# Introducción
+
+La esencia del lenguaje de programación Rust es en realidad **empoderamiento**: no importa qué tipo de código estés escribiendo ahora, Rust puede permitirte ir más allá en una gama más amplia de campos de programación y escribir con confianza. {% .lead %}
+
+{% link-grid %}
+
+{% link-grid-link title="Instalación de óxido" icon="installation" href="/docs/get-started/installation" description="Una guía paso a paso para la configuración del sistema e instalación de Rust" /%}
+
+{% link-grid-link title="Descripción general de alto nivel" icon="plugins" href="/docs/core-concept/high-level-overview" description="Una descripción general de alto nivel del programa Rust" /%}
+
+{% link-grid-link title="Conversión de tipo" icon="presets" href="/docs/advanced/type-cast" description="In advanced learning, we will explain three types of conversion" /%}
+
+{% link-grid-link title="Sistema de construcción" icon="theming" href="/docs/engineering/build-system" description="Using Zig for build system" /%}
+
+{% /link-grid %}
+
+---
+
+## ¿Qué es el óxido?
+
+⚡ **Alto rendimiento**
+
+Rust es increíblemente rápido y eficiente en cuanto a memoria: sin tiempo de ejecución ni recolector de basura, puede impulsar servicios críticos para el rendimiento, ejecutarse en dispositivos integrados e integrarse fácilmente con otros lenguajes.
+
+⚡ **Confiabilidad**
+
+El sistema de tipos enriquecidos y el modelo de propiedad de Rust garantizan la seguridad de la memoria y de los subprocesos, lo que le permite eliminar muchas clases de errores en tiempo de compilación.
+
+⚡ **Productividad**
+
+Rust tiene excelente documentación, un compilador amigable con mensajes de error útiles y herramientas de primer nivel: un administrador de paquetes integrado y una herramienta de compilación, soporte inteligente para múltiples editores con autocompletado e inspecciones de tipo, un formateador automático y más.
 
 {% /article %}
