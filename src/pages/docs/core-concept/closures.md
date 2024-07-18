@@ -336,8 +336,12 @@ fn main() {
 
 {% article i18n="en" %}
 
+# Closures
+
 {% /article %}
 
 {% article i18n="es" %}
+
+# Cierres
 
 {% /article %}

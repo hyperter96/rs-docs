@@ -30,10 +30,26 @@ export const navigationMap = {
           links: [
             { title: '类型转换', href: '/docs/advanced/type-cast'},
             { title: '智能指针', href: '/docs/advanced/smart-ptr'},
+            { title: '结构体自引用', href: '/docs/advanced/struct-self-reference'},
+            { title: '多线程入门', href: '/docs/advanced/multithreading'},
+            { title: '线程间消息传递', href: '/docs/advanced/inter-thread-messaging'},
+            { title: '线程同步与互斥锁', href: '/docs/advanced/thread-synchronization-mutex'},
+            { title: '基于Send和Sync的线程安全', href: '/docs/advanced/thread-safety-based-on-send-and-sync'},
+            { title: '宏编程入门', href: '/docs/advanced/macro-programming'},
           ],
         },
         {
-          title: '工程化',
+          title: '设计模式',
+          links: [
+            { title: '使用借用类型作为参数', href: '/docs/design-patterns/using-borrowed-types-as-parameters'},
+            { title: '使用`format!`串联字符串', href: '/docs/design-patterns/concat-string-with-format'},
+            { title: '使用构造器和默认构造器', href: '/docs/design-patterns/constructor-and-default'},
+            { title: '把集合当成智能指针', href: '/docs/design-patterns/collection-as-smart-ptr'},
+            { title: '在析构器中做最终处理', href: '/docs/design-patterns/final-processing-in-the-destructor'},
+          ],
+        },
+        {
+          title: '测试与工程化',
           links: [
             { title: '构建系统', href: '/docs/engineering/build-system'},
           ],
@@ -70,10 +86,26 @@ export const navigationMap = {
             links: [
               { title: 'Type Conversion', href: '/docs/advanced/type-cast'},
               { title: 'Smart Pointer', href: '/docs/advanced/smart-ptr'},
+              { title: 'Struct Self-reference', href: '/docs/advanced/struct-self-reference'},
+              { title: 'Multithreading', href: '/docs/advanced/multithreading'},
+              { title: 'Inter-thread Messaging', href: '/docs/advanced/inter-thread-messaging'},
+              { title: 'Thread Synchronization & Mutex', href: '/docs/advanced/thread-synchronization-mutex'},
+              { title: 'Thread Safety Based on Send & Sync', href: '/docs/advanced/thread-safety-based-on-send-and-sync'},
+              { title: 'Introduction to Macro Programming', href: '/docs/advanced/macro-programming'},
             ],
         },
         {
-            title: 'Engineering',
+            title: 'Design Patterns',
+            links: [
+              { title: 'Using Borrowed Types as Parameters', href: '/docs/design-patterns/using-borrowed-types-as-parameters'},
+              { title: 'Using `format!` to Concat Strings', href: '/docs/design-patterns/concat-string-with-format'},
+              { title: 'Constructor & Default Constructor', href: '/docs/design-patterns/constructor-and-default'},
+              { title: 'Consider Collections as Smart Pointers', href: '/docs/design-patterns/collection-as-smart-ptr'},
+              { title: 'Do Final Processing in the Destructor', href: '/docs/design-patterns/final-processing-in-the-destructor'},
+            ],
+        },
+        {
+            title: 'Testing & Engineering',
             links: [
               { title: 'Build System', href: '/docs/engineering/build-system'},
             ],
@@ -110,10 +142,26 @@ export const navigationMap = {
         links: [
           { title: 'Conversión de tipo', href: '/docs/advanced/type-cast'},
           { title: 'Puntero inteligente', href: '/docs/advanced/smart-ptr'},
+          { title: 'Estructura de autorreferencia', href: '/docs/advanced/struct-self-reference'},
+          { title: 'subprocesos múltiples', href: '/docs/advanced/multithreading'},
+          { title: 'mensaje que pasa entre hilos', href: '/docs/advanced/inter-thread-messaging'},
+          { title: 'Sincronización de subprocesos y mutex', href: '/docs/advanced/thread-synchronization-mutex'},
+          { title: 'Seguridad de subprocesos basada en envío y sincronización', href: '/docs/advanced/thread-safety-based-on-send-and-sync'},
+          { title: 'Introducción a la programación de macros', href: '/docs/advanced/macro-programming'},
         ],
     },
     {
-        title: 'Ingeniería',
+        title: 'Patrones de diseño',
+        links: [
+          { title: 'Usar tipos prestados como parámetros', href: '/docs/design-patterns/using-borrowed-types-as-parameters'},
+          { title: 'Usando `format!` para cadenas Concat', href: '/docs/design-patterns/concat-string-with-format'},
+          { title: 'Constructor y constructor predeterminado', href: '/docs/design-patterns/constructor-and-default'},
+          { title: 'Considere las colecciones como indicadores inteligentes', href: '/docs/design-patterns/collection-as-smart-ptr'},
+          { title: 'Hacer procesamiento final en destructor', href: '/docs/design-patterns/final-processing-in-the-destructor'},
+        ],
+    },
+    {
+        title: 'Pruebas e ingeniería',
         links: [
           { title: 'Sistema de construcción', href: '/docs/engineering/build-system'},
         ],

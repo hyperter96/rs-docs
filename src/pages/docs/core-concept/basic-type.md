@@ -399,3 +399,9 @@ note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
 # Common Data Types
 
 {% /article %}
+
+{% article i18n="es" %}
+
+# Tipos de datos comunes
+
+{% /article %}

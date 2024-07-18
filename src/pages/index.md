@@ -10,9 +10,13 @@ Rust 程序设计语言的本质实际在于**赋能**（empowerment）：无论
 
 {% link-grid-link title="高层次概述" icon="plugins" href="/docs/core-concept/high-level-overview" description="对Rust程序的高层次概述" /%}
 
-{% link-grid-link title="类型转换" icon="presets" href="/docs/advanced/type-cast" description="在进阶学习中，我们将讲解三种类型转换" /%}
+{% link-grid-link title="类型转换" icon="presets" href="/docs/advanced/type-cast" description="在进阶学习中，我们将讲解类型转换" /%}
 
-{% link-grid-link title="构建系统" icon="theming" href="/docs/engineering/build-system" description="使用Zig进行构建系统" /%}
+{% link-grid-link title="设计模式" icon="theming" href="/docs/design-patterns/using-borrowed-types-as-parameters" description="使用借用类型作为参数" /%}
+
+{% link-grid-link title="设计模式" icon="network" href="/docs/design-patterns/using-borrowed-types-as-parameters" description="使用借用类型作为参数" /%}
+
+{% link-grid-link title="测试与工程化" icon="cog" href="/docs/design-patterns/using-borrowed-types-as-parameters" description="包含编写测试、控制执行、构建系统等" /%}
 
 {% /link-grid %}
 
@@ -49,7 +53,7 @@ The essence of the Rust programming language is actually **empowerment**: no mat
 
 {% link-grid-link title="Type Conversion" icon="presets" href="/docs/advanced/type-cast" description="In advanced learning, we will explain three types of conversion" /%}
 
-{% link-grid-link title="Build System" icon="theming" href="/docs/engineering/build-system" description="Using Zig for build system" /%}
+{% link-grid-link title="Design Patterns" icon="theming" href="/docs/design-patterns/using-borrowed-types-as-parameters" description="Using Borrowed Types as Parameters" /%}
 
 {% /link-grid %}
 
@@ -85,7 +89,7 @@ La esencia del lenguaje de programación Rust es en realidad **empoderamiento**:
 
 {% link-grid-link title="Conversión de tipo" icon="presets" href="/docs/advanced/type-cast" description="In advanced learning, we will explain three types of conversion" /%}
 
-{% link-grid-link title="Sistema de construcción" icon="theming" href="/docs/engineering/build-system" description="Using Zig for build system" /%}
+{% link-grid-link title="Patrones de diseño" icon="theming" href="/docs/design-patterns/using-borrowed-types-as-parameters" description="Usar tipos prestados como parámetros" /%}
 
 {% /link-grid %}
 

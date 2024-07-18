@@ -1047,4 +1047,6 @@ Rust 不允许自身或其任何部分实现了 `Drop` trait 的类型使用 `Co
 
 {% article i18n="es" %}
 
+# Propiedad con estructura y enumeración
+
 {% /article %}

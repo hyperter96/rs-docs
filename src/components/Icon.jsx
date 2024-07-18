@@ -7,7 +7,9 @@ import { PluginsIcon } from '@/components/icons/PluginsIcon'
 import { PresetsIcon } from '@/components/icons/PresetsIcon'
 import { ThemingIcon } from '@/components/icons/ThemingIcon'
 import { WarningIcon } from '@/components/icons/WarningIcon'
-
+import { NetworkIcon } from './icons/NetworkIcon'
+import { CogIcon } from './icons/CogIcon'
+import { EarthIcon } from './icons/EarthIcon'
 const icons = {
   installation: InstallationIcon,
   presets: PresetsIcon,
@@ -15,6 +17,8 @@ const icons = {
   theming: ThemingIcon,
   lightbulb: LightbulbIcon,
   warning: WarningIcon,
+  cog: CogIcon,
+  network: NetworkIcon,
 }
 
 const iconStyles = {
@@ -39,6 +43,25 @@ export function Icon({ color = 'blue', icon, className, ...props }) {
     </svg>
   )
 }
+
+export function CustomIcon({ color = 'blue', icon, className, viewBox, ...props }) {
+  let id = useId()
+  let IconComponent = icons[icon]
+
+  return (
+    <svg
+      aria-hidden="true"
+      viewBox={`0 0 ${viewBox} ${viewBox}`}
+      fill="none"
+      className={clsx(className, iconStyles[color])}
+      {...props}
+    >
+      <IconComponent id={id} color={color} />
+    </svg>
+  )
+}
+
+
 
 const gradients = {
   blue: [

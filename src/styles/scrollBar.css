@@ -1,3 +1,26 @@
+::-webkit-scrollbar{
+    width: 8px;
+}
+    
+.dark ::-webkit-scrollbar-track:vertical{
+    background-color: theme('colors.ghost.600');
+    border-radius: 12px;
+}
+    
+.dark ::-webkit-scrollbar-thumb:vertical{
+    background-color: theme('colors.ghost.400');
+    border-radius: 12px;
+}
+
+::-webkit-scrollbar-track:vertical{
+    background-color: theme('colors.ghost.100');
+    border-radius: 12px;
+}
+    
+::-webkit-scrollbar-thumb:vertical{
+    background-color: theme('colors.ghost.300');
+    border-radius: 12px;
+}
 
 div::-webkit-scrollbar{
     width: 12px;

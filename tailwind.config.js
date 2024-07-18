@@ -61,7 +61,7 @@ module.exports = {
               backgroundColor: theme('colors.ghost.800'),
               wordWrap: 'break-word',
               boxDecorationBreak: 'clone',
-              font: `12px Monaco,Consolas,"Andale  Mono","DejaVu Sans Mono",monospace`,
+              font: `13px Monaco,Consolas,"Andale  Mono","DejaVu Sans Mono",monospace`,
               fontWeight: "lighter",
               padding: '.1rem .3rem .2rem',
               borderRadius: '.2rem',

@@ -65,6 +65,8 @@ const tags = {
       title: { type: String },
       description: { type: String },
       icon: { type: String },
+      customized: { type: Boolean, default: false },
+      viewBox: { type: String, default: "32"},
       href: { type: String },
     },
   },

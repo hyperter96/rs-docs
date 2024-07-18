@@ -12,4 +12,6 @@
 
 {% article i18n="es" %}
 
+# Conversión de tipo
+
 {% /article %}

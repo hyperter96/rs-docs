@@ -12,4 +12,6 @@
 
 {% article i18n="es" %}
 
+# Descripción general de alto nivel
+
 {% /article %}
