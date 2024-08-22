@@ -1,6 +1,6 @@
 # Rust Programming Docs
 
-The site is up on [https://rust.hyperter.top](https://rust.hyperter.top).
+The site is up on [https://rs.hyperter.top](https://rs.hyperter.top).
 
 ## Getting started
 
