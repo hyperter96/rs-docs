@@ -1,6 +1,6 @@
 import { useId } from 'react'
 import clsx from 'clsx'
-
+import Image from "next/legacy/image"
 import { InstallationIcon } from '@/components/icons/InstallationIcon'
 import { LightbulbIcon } from '@/components/icons/LightbulbIcon'
 import { PluginsIcon } from '@/components/icons/PluginsIcon'
@@ -9,7 +9,10 @@ import { ThemingIcon } from '@/components/icons/ThemingIcon'
 import { WarningIcon } from '@/components/icons/WarningIcon'
 import { NetworkIcon } from './icons/NetworkIcon'
 import { CogIcon } from './icons/CogIcon'
-import { EarthIcon } from './icons/EarthIcon'
+import { ComputerIcon } from './icons/ComputerIcon'
+import { QuestionIcon } from './icons/QuestionIcon'
+import { BookIcon } from './icons/BookIcon'
+import { DashboardIcon } from './icons/DashboardIcon'
 const icons = {
   installation: InstallationIcon,
   presets: PresetsIcon,
@@ -19,6 +22,10 @@ const icons = {
   warning: WarningIcon,
   cog: CogIcon,
   network: NetworkIcon,
+  computer: ComputerIcon,
+  book: BookIcon,
+  question: QuestionIcon,
+  dashboard: DashboardIcon,
 }
 
 const iconStyles = {
@@ -29,6 +36,11 @@ const iconStyles = {
 
 export function Icon({ color = 'blue', icon, className, ...props }) {
   let id = useId()
+  if (icon == 'solana') {
+    return (
+      <Image src="/solana-logo.svg" alt="Logo" width={32} height={32} />
+    )
+  }
   let IconComponent = icons[icon]
 
   return (

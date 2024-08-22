@@ -83,7 +83,7 @@ fn main() {
 
 ## Obtain Parameter by Reference & by Value
 
-闭包在Rust中的实现可以近似地理解为一个实现了FnOnce、FnMut和Fn其中一个trait的匿名结构体，这个匿名结构体保存捕获的环境中的变量。通过调用trait的方法来执行闭包体中的代码。
+闭包在Rust中的实现可以近似地理解为一个实现了`FnOnce`、`FnMut`和`Fn`其中一个trait的匿名结构体，这个匿名结构体保存捕获的环境中的变量。通过调用trait的方法来执行闭包体中的代码。
 
 ### Obtain Outer Parameter
 

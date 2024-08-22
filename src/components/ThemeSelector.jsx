@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import { Listbox } from '@headlessui/react'
+import { useRouter } from 'next/router'
 import clsx from 'clsx'
 
 const themes = [
@@ -54,7 +55,8 @@ function SystemIcon(props) {
 
 export function ThemeSelector(props) {
   let [selectedTheme, setSelectedTheme] = useState()
-
+  const { locale } = useRouter()
+  const hero = require(`../../public/locales/${locale}/hero.json`);
   useEffect(() => {
     if (selectedTheme) {
       document.documentElement.setAttribute('data-theme', selectedTheme.value)
@@ -110,7 +112,7 @@ export function ThemeSelector(props) {
                     })}
                   />
                 </div>
-                <div className="ml-3">{theme.name}</div>
+                <div className="ml-3">{hero[theme.name]}</div>
               </>
             )}
           </Listbox.Option>

@@ -14,9 +14,15 @@ Rust 程序设计语言的本质实际在于**赋能**（empowerment）：无论
 
 {% link-grid-link title="设计模式" icon="theming" href="/docs/design-patterns/using-borrowed-types-as-parameters" description="使用借用类型作为参数" /%}
 
-{% link-grid-link title="设计模式" icon="network" href="/docs/design-patterns/using-borrowed-types-as-parameters" description="使用借用类型作为参数" /%}
+{% link-grid-link title="网络编程" icon="computer" href="/docs/network-programming/realize-tcp-server" description="实现一个TCP Server" customized=true viewBox="24" /%}
 
-{% link-grid-link title="测试与工程化" icon="cog" href="/docs/design-patterns/using-borrowed-types-as-parameters" description="包含编写测试、控制执行、构建系统等" /%}
+{% link-grid-link title="异步编程" icon="network" href="/docs/async-programming/why-async" description="为什么使用Async?" /%}
+
+{% link-grid-link title="死灵书" icon="book" href="/docs/nomicon/safe-and-unsafe" description="不安全Rust的黑魔法" customized=true viewBox="24" /%}
+
+{% link-grid-link title="测试与工程化" icon="cog" href="/docs/engineering/test-and-execute" description="包含编写测试、控制执行、构建系统等" /%}
+
+{% link-grid-link title="Wasm开发" icon="dashboard" href="/docs/wasm/learn-wasmer" description="认识Wasmer" customized=true viewBox="36" /%}
 
 {% /link-grid %}
 
@@ -36,7 +42,6 @@ Rust 丰富的类型系统和所有权模型可保证内存安全和线程安全
 
 Rust 具有出色的文档、带有有用错误消息的友好编译器和一流的工具 - 集成的包管理器和构建工具、具有自动完成和类型检查的智能多编辑器支持、自动格式化程序等。
 
-
 {% /article %}
 
 {% article i18n="en" %}
@@ -54,6 +59,16 @@ The essence of the Rust programming language is actually **empowerment**: no mat
 {% link-grid-link title="Type Conversion" icon="presets" href="/docs/advanced/type-cast" description="In advanced learning, we will explain three types of conversion" /%}
 
 {% link-grid-link title="Design Patterns" icon="theming" href="/docs/design-patterns/using-borrowed-types-as-parameters" description="Using Borrowed Types as Parameters" /%}
+
+{% link-grid-link title="Network Programming" icon="computer" href="/docs/network-programming/realize-tcp-server" description="Realize a TCP Server" customized=true viewBox="24" /%}
+
+{% link-grid-link title="Async Programming" icon="network" href="/docs/async-programming/why-async" description="Why use Async?" /%}
+
+{% link-grid-link title="Nomicon" icon="book" href="/docs/nomicon/safe-and-unsafe" description="Magic of Unsafe Rust" customized=true viewBox="24" /%}
+
+{% link-grid-link title="Engineering" icon="cog" href="/docs/engineering/test-and-execute" description="Including Writing Tests, Flow Control & System Build etc." /%}
+
+{% link-grid-link title="Wasm Development" icon="dashboard" href="/docs/wasm/learn-wasmer" description="Learn Wasmer" customized=true viewBox="36" /%}
 
 {% /link-grid %}
 
